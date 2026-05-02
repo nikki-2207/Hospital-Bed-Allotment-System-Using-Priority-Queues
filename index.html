@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital Bed Allotment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Hospital Bed Allotment System</h1>
+
+<div class="form">
+  <input type="text" id="name" placeholder="Patient Name">
+  
+  <select id="priority">
+    <option value="3">Critical</option>
+    <option value="2">Serious</option>
+    <option value="1">Normal</option>
+  </select>
+
+  <button onclick="addPatient()">Add Patient</button>
+  <button onclick="allocateBed()">Allocate Bed</button>
+</div>
+
+<h2>Waiting List</h2>
+<ul id="list"></ul>
+
+<h2>Allocated Patient</h2>
+<p id="result"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
